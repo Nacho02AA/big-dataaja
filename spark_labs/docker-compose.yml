@@ -48,6 +48,7 @@ services:
     volumes:
       - ./workspace:/workspace
       - ./data:/data
+      - ./notebooks:/notebooks
     environment:
       - JUPYTER_ENABLE_LAB=yes    # Enable JupyterLab
       - SPARK_MASTER=spark://spark-master:7077

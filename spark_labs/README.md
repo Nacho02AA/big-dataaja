@@ -3,26 +3,27 @@
 This setup provides a Docker environment with Apache Spark (Master + Worker) and JupyterLab integration.
 
 ## Prerequisites
+
 - Docker
 - Docker Compose
 
 ## Setup Instructions
 
 1. Create project structure:
+
    ```bash
    mkdir spark-jupyter-docker
    cd spark-jupyter-docker
    mkdir workspace
    ```
-
 2. Place all the configuration files in the project root directory.
-
 3. Build and start the containers:
+
    ```bash
    docker-compose up --build
    ```
-
 4. Access the UIs:
+
    - JupyterLab: http://localhost:8888 (token: token-uag)
    - Spark Master UI: http://localhost:8080
    - Spark Worker UI: http://localhost:8081
@@ -63,6 +64,8 @@ df.show()
   - Worker Memory: 1GB
 
 ## Note
+
 This configuration uses:
+
 - Apache Spark 3.5.4 with Python 3 support (scala2.12-java11-python3-ubuntu)
 - JupyterLab instead of Jupyter Notebook for a more modern interface
